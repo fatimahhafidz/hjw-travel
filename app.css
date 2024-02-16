@@ -32,3 +32,12 @@ figure:hover img {
 section {
   padding-top: 5rem;
 }
+
+/* @media (max-width: 768px) {
+  #carouselExampleAutoplaying {
+    display: none;
+  }
+  #carouselAutoplaying {
+    display: flex;
+  }
+} */
