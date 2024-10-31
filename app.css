@@ -18,18 +18,19 @@ body {
   padding-top: 4rem;
 }
 
-#btn-bulat, #btn-bulat-2 {
+#btn-bulat,
+#btn-bulat-2 {
   width: 40px;
   height: 40px;
   text-align: center;
   border-radius: 50%;
 }
 
-#air-plane-logo:hover{
+#air-plane-logo:hover {
   transform: scale(75%);
 }
 
-#img-logo-hjw:hover{
+#img-logo-hjw:hover {
   transform: scale(75%);
 }
 
@@ -39,7 +40,7 @@ section {
 
 @media (max-width: 992px) {
   #btn-bulat {
-    margin:3px ;
+    margin: 3px;
     width: 200px;
     height: 40px;
     text-align: center;
