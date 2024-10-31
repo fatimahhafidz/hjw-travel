@@ -18,43 +18,50 @@
     <link rel="stylesheet" href="app.css" />
   </head>
 
-  <body id="news" class="bg-dark-subtle">
+  <body id="news">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark-subtle fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
       <div class="container p-1">
-        <a class="navbar-brand" href="#"><img src="image/logo/logo-hjw-1.png" alt="logo hjw" width="100" height="40" loading="lazy"/></a>
+        <a class="navbar-brand" href="index.html"><img src="image/logo/logo-hjw-2.png" alt="logo hjw" width="100" height="40" loading="lazy" /></a>
+        <a class="navbar-icon opacity-0" href="#"><img src="favicon.ico" alt="icon hjw" /></a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto">
+
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+              <a class="nav-link" href="profilhjw.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.html">Berita</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#about">Tentang HJW</a>
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">Layanan</a>
+
               <ul class="dropdown-menu dropdown-menu-dark bg-secondary">
-                <li><a class="dropdown-item page-scroll" href="profilhjw.html" style="color: beige">Profil HJW</a></li>
-                <li><a class="dropdown-item page-scroll" href="profilhjw.html#profil-pengurus" style="color: beige">Profil Pengurus</a></li>
+                <li>
+                  <a class="dropdown-item page-scroll" href="umrohreg.html" style="color: beige">Paket Umroh</a>
+                </li>
+                <li>
+                  <a class="dropdown-item page-scroll" href="hajikhusus.html" style="color: beige">Paket Haji</a>
+                </li>
+                <li>
+                  <a class="dropdown-item page-scroll" href="wisataislami.html" style="color: beige">Paket Wisata Islami</a>
+                </li>
               </ul>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link active" href="#news">Berita</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="umrohreg.html">Paket Umroh</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="hajikhusus.html">Paket Haji</a>
+              <a class="nav-link" href="galery.html">Galery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wisataislami.html">Wisata Islami</a>
+              <a class="nav-link" href="galery.html">Testimoni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="galery.html">Galery & testimoni</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontak">Contact Us</a>
+              <a class="nav-link" href="#kontak">Hubungi Kami</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-success fs-6 text-center" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997" id="btn-bulat"><i class="bi bi-whatsapp"></i></a>
@@ -82,6 +89,20 @@
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="image/galery-berita/berita4.webp" class="card-img-top" alt="berita 4" loading="lazy"/>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Asphurindo Minta Pemerintah Tambah Kuota Ibadah Haji Khusus</h5>
+                <p class="card-text">By Rini Suryati - Jumat, 5 Juli 2024 | 09:28 WIB</p>
+                <p>Krjogja.com - Jakarta - Ketua Asosiasi Penyelenggara Haji, Umrah dan Inbound Indonesia (ASPHURINDO) KH Hafidz Taftazani kepada wartawan di Jakarta, Kamis (4/7/2024) meminta pemerintah (Kemenag-red) menambah kuota untuk Penyelenggara Ibadah Haji Khusus ( PIHK) menjadi 33 ribu jamaah di tahun depan.</p>
+                <p>KH Hafidz Taftazani menjelaskan kuota jamaah haji yang diberikan oleh Pemerintahan Arab Saudi sebesar 221.000 jamaah dan tambahan sebesar 20 ribu jamaah selama dua tahun ini menjadi angin segar bagi pemerintah Indonesia untuk mengurangi antrian panjang jamaah haji.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary"><a class="fw-bold" href="https://www.krjogja.com/internasional/1244829957/asphurindo-minta-pemerintah-tambah-kuota-ibadah-haji-khusus">Baca disini</a></small>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <div class="card h-100">
               <img src="image/galery-berita/berita1.jpg" class="card-img-top" alt="berita 1" loading="lazy"/>

@@ -29,6 +29,10 @@ body {
   transform: scale(75%);
 }
 
+#img-logo-hjw:hover{
+  transform: scale(75%);
+}
+
 section {
   padding-top: 5rem;
 }
