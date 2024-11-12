@@ -16,6 +16,8 @@
 
     <!-- my css -->
     <link rel="stylesheet" href="app.css" />
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -73,8 +75,8 @@
     </nav>
     <!-- akhir navbar -->
 
-    <!-- galery -->
-    <section id="galery">
+    <!-- testimony -->
+    <section id="testimony">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col-md-12 text-center fs-4 p-4 fw-bold" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">TESTIMONI</div>
@@ -98,7 +100,61 @@
               <source src="video/testi-haji2024-1.mp4" type="video/mp4" loading="lazy" />
             </video>
           </div>
+        </div>
 
+        <div class="row justify-content-center p-5 rounded shadow border mb-5">
+          <div class="col-md-12 border p-2">
+            <h4 class="mb-3">Testimoni Jamaah</h4>
+            <div class="custom-scrollbar-css p-2">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, deserunt.</p>
+              <hr />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at unde a adipisci perspiciatis cum nemo error vitae recusandae nobis quidem, similique quod, atque expedita.</p>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et officiis iure quo deserunt aliquam quos corporis eaque, sapiente, consequuntur incidunt earum tenetur sed illum, cupiditate harum eum sunt repudiandae?
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-10 border m-3 p-5 mt-5 shadow-lg">
+            <form name="pengalaman-form-hjw">
+              <p class="fw-bold text-success">Bagikan Pengalaman Anda Bersama Kami<br /></p>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control form-control-sm" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Tahun Keberangkatan Haji/Umroh</label>
+                <div class="row">
+                  <div class="col-2">
+                    <select class="form-select mb-2 form-select-sm" aria-label="Default select example" id="haji/umroh" aria-describedby="haji/umroh" name="haji/umroh">
+                      <option value="umroh">Umroh</option>
+                      <option value="haji">Haji</option>
+                    </select>
+                  </div>
+                  <div class="col-2">
+                    <input type="text" class="form-control form-control-sm" id="Tahun" aria-describedby="Tahun" name="Tahun" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="notelp" class="form-label">Judul Pengalaman</label>
+                <input type="text" class="form-control form-control-sm" id="judul" aria-describedby="judul" name="judul" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan Mengenai Pengalaman Anda</label>
+                <textarea class="form-control form-control-sm" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
           <div class="col-md-10">
             <div class="d-grid gap-2 col-6 mx-auto">
               <a class="btn btn-warning text-white shadow" href="index.html">Kembali ke Beranda</a>
@@ -108,7 +164,7 @@
         </div>
       </div>
     </section>
-    <!-- akhir galery -->
+    <!-- akhir testimony -->
 
     <!-- credit -->
     <section id="kontak">
@@ -164,5 +220,40 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyb7IPV8s08B4ZCCHuoqjKQYM5u_xYXFWfzPNLf8UAF92i6gZADcRL44uowZKihC-xheg/exec";
+      const form = document.forms["pengalaman-form-hjw"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        //ketika tombol submit di klik
+        //tampilkan tombol loading hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            //tampilkan tombol kirim hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+
+            //tampilkan alert
+            swal({
+              title: "Terimakasih!",
+              text: "Pesan berhasil terkirim",
+              icon: "success",
+              button: true,
+            });
+
+            //reset form
+            form.reset();
+
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
