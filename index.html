@@ -21,31 +21,625 @@
   </head>
 
   <body>
-    <div class="position-absolute top-50 start-50 translate-middle">
-      <p class="fs-2 text-danger text-center">TEMPORARY OUT OF SERVICE</p>
-      <div class="text-center">
-        <div class="spinner-border text-danger" role="status">
-          <span class="visually-hidden">Loading...</span>
+    <!-- <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasLabel"><img src="image/logo/logo-hjw-bintang-2.png" alt="logo hjw" width="40" height="40" loading="lazy" /> Umroh Bareng Pegi Setiawan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center">
+        <img src="image/brosur-umroh/brosur-umroh-pegi-2.jpg" class="img-fluid mb-3" alt="paket umroh bareng pegi" />
+        <a type="button" class="btn btn-primary" href="umrohreg.html">Lihat Paket</a>
+      </div>
+    </div> -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-lg" id="navbar" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+      <div class="container p-1">
+        <a class="navbar-brand" href="#home"><img src="image/logo/logo-hjw-2.png" alt="logo hjw" width="100" height="40" loading="lazy" /></a>
+        <a class="navbar-icon opacity-0" href="#"><img src="favicon.ico" alt="icon hjw" /></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="profilhjw.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">Layanan</a>
+
+              <ul class="dropdown-menu dropdown-menu-dark bg-secondary">
+                <li>
+                  <a class="dropdown-item page-scroll" href="umrohreg.html" style="color: beige">Paket Umroh</a>
+                </li>
+                <li>
+                  <a class="dropdown-item page-scroll" href="hajikhusus.html" style="color: beige">Paket Haji</a>
+                </li>
+                <li>
+                  <a class="dropdown-item page-scroll" href="wisataislami.html" style="color: beige">Paket Wisata Islami</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimony.html">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubungikami.html">Hubungi Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn fs-6 text-center" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp text-success"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn fs-6 text-center" aria-current="page" href="https://www.instagram.com/alharamain.jw/"><i class="bi bi-instagram text-primary"></i></a>
+            </li>
+          </ul>
         </div>
-        <div class="spinner-border text-danger" role="status">
-          <span class="visually-hidden">Loading...</span>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Konten utama -->
+    <div class="container-fluid pt-5" style="background-image: url(image/banner/unta3.jpg)">
+      <div class="text-center text-white">
+        <img class="img-fluid pb-3" src="image/logo/logo-hjw-2.png" width="550" height="50" alt="logo hjw" loading="lazy" id="img-logo-hjw" />
+
+        <p class="fw-bold fs-4">Izin : 0291000952027</p>
+        <p class="font-monospace fs-4">TRAVEL HAJI & UMROH</p>
+        <p class="fs-4">JEMBATAN ANDA MENUJU HARAMAIN</p>
+
+        <a type="button" class="btn btn-primary" href="umrohreg.html">Lihat Paket</a>
+      </div>
+
+      <div>
+        <marquee class="py-2 text-white bg-dark mt-5 fs-6" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+          Selamat datang di website kami alharamainjayawisata.com - Umroh - Haji Khusus - Wisata Islami - Jl. Jend. Basuki Rahmat/12, Kp. Melayu - Jaktim 13310
+        </marquee>
+      </div>
+    </div>
+    <!-- akhir konten utama -->
+
+    <!-- konten -->
+    <section class="bg-light p-3 shadow">
+      <div class="container text-center">
+        <div class="row justify-content-center pt-3 mt-2 bg-warning-subtle rounded shadow">
+          <div class="col-md-12">
+            <figure class="text-end m-3">
+              <blockquote class="blockquote">
+                <p class="fw-bold fs-6">
+                  Rasulullah ﷺ bersabda : <br />
+                  Dari umroh ke umroh adalah tebusan (dosa-dosa yang dikerjakan) diantara keduanya, dan Haji yang mabrur balasannya tiada lain adalah surga
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Hadist Riwayat <cite title="Source Title">Bukhori & Muslim</cite></figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="spinner-border text-success" role="status">
-          <span class="visually-hidden">Loading...</span>
+
+        <div class="row p-4 mb-5 justify-content-center align-items-center" id="profil">
+          <div class="col-md-12 text-center">
+            <img src="image/logo/logo-hjw-bintang-2.png" width="100px" height="100px" alt="logo hjw" class="d-lg-inline" loading="lazy" />
+            <img src="image/logo/logo5p.png" alt="logo 5p" width="200px" height="75px" class="img-fluid" loading="lazy" />
+            <img src="image/logo/logo ashpurindo.png" alt="logo asphurindo" width="100px" height="100px" class="img-fluid" loading="lazy" />
+            <p class="fs-3">Tentang Al Haramain Jaya Wisata Tour & Travel</p>
+            <h1 class="font-monospace fs-3">Tujuan kami adalah memberikan pengalaman beribadah terindah untuk para jamaah</h1>
+            <p>
+              23 tahun sudah kami mengabdi untuk melayani ribuan keluarga jamaah Indonesia. Dari dahulu hingga kini kami tetap berpegang teguh pada prinsip syariat Islam agar jamaah mencapai Umroh dan Haji mabrur. Tentu saja hal itulah yang
+              paling penting. Karena hal itu merupakan tanggung jawab kami dunia dan akhirat. Selebihnya adalah kami berusaha seoptimal mungkin untuk melayani para jamaah sehingga para jamaah Indonesia merasa nyaman dan semua hak-hak yang
+              mereka bayarkan terpenuhi. Insya Allah.
+            </p>
+          </div>
+          <!-- <div class="col-2 text-center d-none d-md-inline">
+            <figure><img src="image/logo/logo ashpurindo.png" alt="logo asphurindo" width="100px" height="100px" class="img-fluid" loading="lazy" /></figure>
+          </div>
+          <div class="col-2 text-center d-none d-md-inline">
+            <figure><img src="image/logo/logo5p.png" alt="logo 5p" width="200px" height="75px" class="img-fluid" loading="lazy" /></figure>
+          </div> -->
+          <!-- <div class="col-2 text-center d-none d-md-inline">
+            <figure><img src="image/logo/kemnag.png" alt="logo kemenag" width="85px" height="50px" class="img-fluid" loading="lazy" /></figure>
+          </div>
+          <div class="col-2 text-center d-none d-md-inline">
+            <figure><img src="image/logo/LogoSiskopatuh.png" alt="logo sisko patuh" width="150px" height="75px" class="img-fluid" loading="lazy" /></figure>
+          </div> -->
+          <div class="col-md-10 text-center">
+            <p class="fw-bold">Lihat Profil Kami disini :</p>
+            <div class="col-8 mx-auto">
+              <a class="btn btn-warning text-white shadow m-2" href="profilhjw.html">Profil HJW</a>
+              <a class="btn btn-success shadow" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+            </div>
+          </div>
         </div>
-        <div class="spinner-border text-danger" role="status">
-          <span class="visually-hidden">Loading...</span>
+
+        <div class="row justify-content-center mb-5 pt-3 bg-warning-subtle rounded shadow">
+          <div class="col-md-12">
+            <figure class="text-start mx-3">
+              <blockquote class="blockquote">
+                <p class="fw-bold fs-6">
+                  Rasulullah ﷺ bersabda : <br />
+                  Shalat di masjidku (Masjid Nabawi) lebih utama daripada 1.000 sholat di masjid lainnya selain Masjidil Harom. Shalat di Masjidil Harom lebih utama daripada 100.000 sholat di masjid lainnya.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Hadist Riwayat <cite title="Source Title">Ahmad & Ibnu Majah</cite></figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="spinner-border text-warning" role="status">
-          <span class="visually-hidden">Loading...</span>
+
+        <!-- <div class="row justify-content-center">
+          <div class="col-md-10 text-center p-3">
+            <figure><img src="image/logo/logo hjw.png" width="100px" height="100px" alt="logo hjw" class="d-lg-inline p-2" loading="lazy" /></figure>
+          </div>
+        </div> -->
+
+        <div class="row justify-content-center rounded shadow-lg mb-4 p-4" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+          <div class="col-md-10 text-end p-3">
+            <p class="text-primary-emphasis fw-bold fs-2">Mengapa Harus Memilih HJW</p>
+            <!-- <hr class="border border-3 border-primary-emphasis" /> -->
+          </div>
+          <!-- </div> -->
+
+          <!-- <div class="row justify-content-center align-items-center mb-5"> -->
+          <div class="col-md-4">
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <figure>
+                <div class="card-header fw-bold">
+                  <img src="image/logo/logo ashpurindo.png" alt="logo asphurindo" width="50px" height="50px" loading="lazy" />
+                  <p>Kami merupakan anggota Asphurindo</p>
+                </div>
+              </figure>
+              <div class="card-body">
+                <p class="card-text">
+                  Asphurindo merupakan sebuah asosiasi yang melakukan pengawasan dan pengelolaan mengenai penyelenggaraan ibadah Haji dan Umroh. Asphurindo diakui secara resmi oleh Kementrian Agama RI. Dengan menjadi anggota Asphurindo,
+                  kami harus mematuhi aturan dan mengikuti ketetapan mengenai penyelenggaraan Haji dan Umroh yang telah ditetapkan oleh organisasi dan peraturan Pemerintah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <figure>
+                <div class="card-header fw-bold">
+                  <img src="image/logo/logo-aswaja.png" alt="logo aswaja" width="100px" height="50px" loading="lazy" />
+                  <p>Pelayanan dan Bimbingan Ibadah Aswaja</p>
+                </div>
+              </figure>
+              <div class="card-body">
+                <p class="card-text">
+                  Sebagaimana sama dengan mayoritas prinsip syariat Islam di Indonesia, kami mengusung juga ajaran Aswaja (Ahlusunnah Wal Jamaah) yang melandasi program penyelenggaraan Haji dan Umroh yang kami bangun. Yaitu merujuk pada 4
+                  Mazhab yaitu Mazhab Hanafi, Maliki, Syafi'i dan Hambali. Kami mengedapankan Akhlak, Akidah dan Toleransi sebagaimana itu merupakan ajaran Nabi Muhammad SAW dan juga sahabat-sahabatnya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <figure>
+                <div class="card-header fw-bold">
+                  <img src="image/logo/guaranted.png" alt="logo garansi" width="75px" height="75px" loading="lazy" />
+                  <p>Pembimbing dan Penyelenggara yang mumpuni dan teruji</p>
+                </div>
+              </figure>
+              <div class="card-body">
+                <p class="card-text">
+                  Kami telah menjadi rekan ribuan keluarga Indonesia untuk berhaji dan umroh selama lebih dari 20 tahun. Dan selalu berusaha menghadirkan pelayanan terbaik untuk memberikan pengalaman ibadah terindah bagi para jamaah.
+                  Pembimbing kami juga telah memiliki sertifikat penyelenggara haji dan umroh.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-4">
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <figure>
+                <div class="card-header fw-bold">
+                  <img src="image/logo/kemnag.png" alt="logo 5p" width="60px" height="50px" loading="lazy" />
+                  <p>Perusahaan Kami Berizin Resmi</p>
+                </div>
+              </figure>
+              <div class="card-body">
+                <p class="card-text">
+                  Perusahaan kami berizin resmi di Kementrian Agama Republik Indonesia dengan SK HAJI : 554/2019 dan SK UMROH : 123/2021. Berikut akta penderian No. 63 tahun 1997 dan melakukan perubahan dengan akta No. 26 tahun 2009. No
+                  izin BPW Nomor 4/Y.1.1/31.75.03/-1.858.8/2019. Cek keberadaan kami<a class="fw-bold" href="https://simpu.kemenag.go.id/home/travel?keywords=Al+haramain+jaya+wisata"> disini </a>
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-md-4">
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <figure>
+                <div class="card-header fw-bold">
+                  <img src="image/logo/harga-bersaing.png" alt="logo 5p" width="60px" height="50px" loading="lazy" />
+                  <p>Harga bersaing</p>
+                </div>
+              </figure>
+              <div class="card-body">
+                <p class="card-text">
+                  Dengan merujuk Peraturan Pemerintah dan Organisasi, kami menetapkan harga terbaik yang bisa bersaing dengan Travel lain pada umumnya. Tentu saja kami menawaran pelayanan eksklusif yang menghadirkan kenyamanan beribadah
+                  untuk para jamaah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-bg-light mb-3" style="max-width: 40rem">
+              <figure>
+                <div class="card-header fw-bold">
+                  <img src="image/logo/haji mabrur.png" alt="logo 5p" width="50px" height="50px" loading="lazy" />
+                  <p>Gratis Manasik Haji</p>
+                </div>
+              </figure>
+              <div class="card-body">
+                <p class="card-text">Manasik Haji yang kami selenggarakan merupakan bagian dari pelayanan Haji untuk para Jamaah. Kami sediakan gratis demi kenyamanan ibadah para Jamah kami.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 p-5">
+            <a class="btn btn-success btn-lg" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          </div>
         </div>
-        <div class="spinner-border text-danger" role="status">
-          <span class="visually-hidden">Loading...</span>
+      </div>
+    </section>
+
+    <div class="container-fluid bg-light">
+      <div class="row mb-5 pt-4 justify-content-evenly">
+        <div class="col-md-12 text-start p-3 align-bottom" id="kontenpaket">
+          <p class="fw-bold fs-2 rounded text-primary-emphasis"><img src="image/logo/logo-hjw-bintang-2.png" width="75px" height="75px" alt="logo hjw" class="d-lg-inline img-fluid" loading="lazy" /> PAKET PERJALANAN</p>
         </div>
-        <div class="spinner-border text-danger" role="status">
-          <span class="visually-hidden">Loading...</span>
+
+        <div class="col-md-4 text-center shadow-lg p-5 mb-2" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+          <figure><img src="image/masjid nabawi.jpg" alt="nabawi" class="d-lg-inline img-fluid rounded border border-2" loading="lazy" /></figure>
+          <p><a class="fw-bold text-primary-emphasis link-body-emphasis link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-3" href="umrohreg.html">Paket Umroh</a></p>
+          <p class="fw-bold">
+            Mulai IDR 25 Juta <br />
+            <i class="bi bi-calendar2-day-fill"></i> 9 Hari - 12 Hari <br />
+            <i class="bi bi-airplane-fill"></i> Lion Air, Saudi Arabia Airlines <br />
+            <i class="bi bi-building-fill"></i>Hotel *** / *****
+          </p>
+          <div class="d-grid gap-2 col-7 mx-auto">
+            <a class="btn btn-warning text-white shadow" href="umrohreg.html">Lihat Detail Paket</a>
+            <a class="btn btn-success shadow" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center shadow-lg p-5 mb-2" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+          <figure><img src="image/mekah.jpg" alt="mekah" class="d-lg-inline img-fluid rounded border border-2" loading="lazy" /></figure>
+          <p><a class="fw-bold text-primary-emphasis link-body-emphasis link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-3" href="hajikhusus.html">Paket Haji</a></p>
+          <p class="fw-bold">
+            Haji Langsung Berangkat <br />
+            <i class="bi bi-calendar2-day-fill"></i> 26-45 Hari <br />
+            <i class="bi bi-airplane-fill"></i> Lion Air, Saudi Arabia Airlines, Oman Air <br />
+            <i class="bi bi-building-fill"></i>Hotel *** / *****
+          </p>
+          <div class="d-grid gap-2 col-7 mx-auto">
+            <a class="btn btn-warning text-white shadow" href="hajikhusus.html">Lihat Detail Paket</a>
+            <a class="btn btn-success shadow" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center shadow-lg p-5 mb-2" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+          <figure><img src="image/uzbekistan.jpg" alt="uzbekistan" class="d-lg-inline img-fluid rounded border border-2" loading="lazy" /></figure>
+          <p><a class="fw-bold text-primary-emphasis link-body-emphasis link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-3" href="wisataislami.html">Wisata Islami</a></p>
+          <p class="fw-bold">
+            Uzbekistan dan Daerah Lainnya <br />
+            <i class="bi bi-geo-alt-fill"></i> Tashkent - Samarkand - Bukhara <br />
+            <i class="bi bi-airplane-fill"></i> Lion Air, Uzbekistan Airways, Oman Air, Turkys Air <br />
+            <i class="bi bi-building-fill"></i>Hotel Luxury
+          </p>
+          <div class="d-grid gap-2 col-7 mx-auto">
+            <a class="btn btn-warning text-white shadow" href="wisataislami.html">Lihat Detail Paket</a>
+            <a class="btn btn-success shadow" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row justify-content-center pt-3 bg-warning-subtle rounded shadow">
+        <div class="col-md-10">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p class="fw-bold fs-6">
+                Rasulullah ﷺ bersabda : <br />
+                Jamaah haji dan umrah adalah tamu Allah. Allah memanggil mereka lalu mereka pun menyambut panggilan-Nya, jika mereka meminta ampun kepada-Nya maka Dia pun mengampuninya.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Hadist Riwayat <cite title="Source Title">Ibnu Majah</cite></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-11 m-2 text-center">
+          <img src="image/logo/logo-hjw-bintang-2.png" width="75px" height="75px" alt="logo hjw" class="d-lg-inline img-fluid" loading="lazy" />
+          <p class="fw-bold text-primary-emphasis fs-3">PAKET LAYANAN HJW</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-haji/brosurhaji5.jpg" class="card-img-top" alt="paket haji" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis fs-5">Haji Khusus</p>
+              <p class="card-text" style="font-size: 0.9em">
+                Setor Awal <b>USD $ 4.500 </b> <br />
+                Kuota haji resmi pemerintah<br />
+                <i class="bi bi-geo-alt-fill text-primary"></i> Starting Soekarno-Hatta International Airport (CGK). <br />
+                Estimasi harga (2025) USD $13.000 <br />
+                Masa tunggu 5-6 tahun
+              </p>
+              <a href="hajikhusus.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-umroh/umroh-bareng-pegi.png" class="card-img-top" alt="paket umroh bareng pegi" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis">Umroh Bareng Pegi Setiawan</p>
+              <p class="card-text" style="font-size: 0.9em">
+                <b class="text-danger fs-6">IDR 25.000.000,-</b> <br />
+                <i class="bi bi-airplane-fill text-primary"></i> Kelas Ekonomi <br />
+                <i class="bi bi-clock-fill text-primary"></i> 9 Hari - Quard <br />
+                <i class="bi bi-calendar2-fill text-primary"></i> Februari 2025 <br />
+                <i class="bi bi-map-fill text-primary"></i> JKT-JED-JKT <br />
+                <i class="bi bi-building-fill text-primary"></i> Hotel *** <br />
+                <b class="text-danger">FREE HUDAIBIYAH | FREE MUSIUM AL AMOODI | FREE MUSIUM HARAMAIN </b>
+              </p>
+              <a href="umrohreg.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-umroh/brosur-umroh-hjw-22.jpg" class="card-img-top" alt="paket umroh 1" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis fs-5">Umroh Promo 2025</p>
+              <p class="card-text" style="font-size: 0.8em">
+                <b class="text-danger fs-6">IDR 25.000.000,-</b> <br />
+                <i class="bi bi-airplane-fill text-primary"></i> Kelas Ekonomi <br />
+                <i class="bi bi-clock-fill text-primary"></i> 9 Hari - Quard <br />
+                <i class="bi bi-calendar2-fill text-primary"></i> Februari 2025 <br />
+                <i class="bi bi-map-fill text-primary"></i> JKT-JED-JKT <br />
+                <i class="bi bi-building-fill text-primary"></i> Hotel *** <br />
+                <b class="text-danger">FREE HUDAIBIYAH | FREE MUSIUM AL AMOODI | FREE MUSIUM HARAMAIN </b>
+              </p>
+              <a href="umrohreg.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-umroh/brosur-umroh-hjw-17.jpg" class="card-img-top" alt="paket umroh 1" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis fs-5">Umroh Mantap 2025</p>
+              <p class="card-text" style="font-size: 0.9em">
+                <b class="fs-6">IDR 32.900.000,-</b> <br />
+                <i class="bi bi-airplane-fill text-primary"></i> Saudia Airlines <br />
+                <i class="bi bi-clock-fill text-primary"></i> 12 Hari - Quard <br />
+                <i class="bi bi-calendar2-fill text-primary"></i> 9 Januari 2025 & 6 Februari 2025 <br />
+                <i class="bi bi-map-fill text-primary"></i> JKT-JED/MAD-JKT <br />
+                <i class="bi bi-building-fill text-primary"></i> Hotel *** <br />
+                <b class="text-danger">FREE THOIF | FREE MUSIUM HUDAIBIYAH </b>
+              </p>
+              <a href="umrohreg.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-umroh/brosur-umroh-hjw-17.jpg" class="card-img-top" alt="paket umroh 1" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis fs-5">Umroh Mantap 2025</p>
+              <p class="card-text" style="font-size: 0.9em">
+                <b class="fs-6">IDR 30.400.000,-</b> <br />
+                <i class="bi bi-airplane-fill text-primary"></i> Lion Air <br />
+                <i class="bi bi-clock-fill text-primary"></i> 12 Hari - Quard <br />
+                <i class="bi bi-calendar2-fill text-primary"></i> 9 Januari 2025 & 6 Februari 2025 <br />
+                <i class="bi bi-map-fill text-primary"></i> JKT-JED/MAD-JKT <br />
+                <i class="bi bi-building-fill text-primary"></i> Hotel *** <br />
+                <b class="text-danger">FREE THOIF | FREE MUSIUM HUDAIBIYAH </b>
+              </p>
+              <a href="umrohreg.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-umroh/brosur-umroh-hjw-20.jpg" class="card-img-top" alt="paket umroh 2" />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis fs-5">Umroh Akhir Tahun 2024</p>
+              <p class="card-text" style="font-size: 0.9em">
+                <b class="fs-6">IDR 35.500.000,-</b> <br />
+                <i class="bi bi-airplane-fill text-primary"></i> Saudia Airlines <br />
+                <i class="bi bi-clock-fill text-primary"></i> 9 Hari - Quard <br />
+                <i class="bi bi-calendar2-fill text-primary"></i> 20 Desember 2024 <br />
+                <i class="bi bi-map-fill text-primary"></i> JKT-JED/MAD-JKT <br />
+                <i class="bi bi-building-fill text-primary"></i> Hotel *** <br />
+                <b class="text-danger">FREE THOIF </b>
+              </p>
+              <a href="umrohreg.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="image/brosur-umroh/brosur-umroh-hjw-21.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-title fw-bold text-primary-emphasis fs-5">Umroh Reguler 12 Hari</p>
+              <p class="card-text" style="font-size: 0.9em">
+                <b class="fs-6">IDR 32.900.000,-</b> <br />
+                <i class="bi bi-airplane-fill text-primary"></i> Saudia Airlines <br />
+                <i class="bi bi-clock-fill text-primary"></i> 12 Hari - Quard <br />
+                <i class="bi bi-calendar2-fill text-primary"></i> 28 November 2024 <br />
+                <i class="bi bi-map-fill text-primary"></i> JKT-JED/MAD-JKT <br />
+                <i class="bi bi-building-fill text-primary"></i> Hotel *** <br />
+                <b class="text-danger">FREE THOIF | FREE HUDAIBIYAH | FREE MUSIUM AL MOUDI</b>
+              </p>
+              <a href="umrohreg.html" class="card-link">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-10 text-center p-3">
+          <img src="image/logo/logo-hjw-bintang-2.png" width="100px" height="100px" alt="logo hjw" class="d-lg-inline" loading="lazy" />
+          <p class="fw-bold fs-3">Potret Perjalanan Para Jamaah</p>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <img class="img-fluid rounded" src="image/galery/galery11.jpg" alt="galery 1" loading="lazy" />
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <img class="img-fluid rounded" src="image/galery/galery10.jpg" alt="galery 2" loading="lazy" />
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <img class="img-fluid rounded" src="image/galery/galery12.jpg" alt="galery 3" loading="lazy" />
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <img class="img-fluid rounded" src="image/galery/galery1.jpg" alt="galery 2" loading="lazy" />
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <img class="img-fluid rounded" src="image/galery/Galery-haji-2024/haji-2024-7.jpg" alt="galery 2" loading="lazy" />
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <img class="img-fluid rounded" src="image/galery/Galery-haji-2024/haji-2024-6.jpg" alt="galery 2" loading="lazy" />
+        </div>
+        <div class="col-md-4 mb-2">
+          <iframe src="https://youtube.com/embed/mVbT3QfJt2Y?si=EaKicBGn7m7XSzG8" width="950" height="230" title="YouTube video" allowfullscreen="true" loading="lazy" class="object-fit-scale w-100"></iframe>
+        </div>
+        <div class="col-md-4 mb-2">
+          <iframe src="https://youtube.com/embed/WGrIOqXQxMc?si=KPNVmygO4Ipnwg1U" width="950" height="230" title="YouTube video" allowfullscreen="true" loading="lazy" class="object-fit-contain w-100"></iframe>
+        </div>
+        <div class="col-md-4 mb-5 align-items-center text-center">
+          <video controls class="object-fit-contain w-100">
+            <source src="video/VIDEO-2023-manasik.mp4" type="video/mp4" loading="lazy" />
+          </video>
+        </div>
+
+        <div class="col-md-10 text-center">
+          <p class="fw-bold">Lihat Galery Lainnya disini :</p>
+          <div class="col-8 mx-auto">
+            <a class="btn btn-warning text-white shadow m-2" href="galery.html">Galery HJW</a>
+            <a class="btn btn-success shadow" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+          <div class="col-2 p-2 text-center mb-3 d-none d-md-inline">
+            <img class="img-fluid" src="image/maskapai/lion air logo.png" width="200px" height="50px" alt="logo lion air" loading="lazy" id="air-plane-logo" />
+          </div>
+          <div class="col-2 text-center mb-3 d-none d-md-inline">
+            <img class="img-fluid" src="image/maskapai/logo_saudia_air.png" width="200px" height="50px" alt="logo saudia air" loading="lazy" id="air-plane-logo" />
+          </div>
+          <div class="col-2 text-center mb-3 d-none d-md-inline">
+            <img class="img-fluid" src="image/maskapai/Uzbekistan_Airways_logo.png" width="200px" height="50px" alt="logo uzbekistan air" loading="lazy" id="air-plane-logo" />
+          </div>
+          <div class="col-2 text-center mb-3 d-none d-md-inline">
+            <img class="img-fluid" src="image/maskapai/Oman_Air-Logo.png" width="200px" height="50px" alt="logo oman air" loading="lazy" id="air-plane-logo" />
+          </div>
+          <div class="col-2 text-center mb-3 d-none d-md-inline">
+            <img class="img-fluid" src="image/maskapai/emirates-airlines-logo.png" width="200px" height="50px" alt="logo emirates air" loading="lazy" id="air-plane-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- akhir konten -->
+
+    <!-- credit -->
+    <section id="kontak">
+      <div class="container-fluid">
+        <div class="row pt-3" style="background-image: linear-gradient(to right, rgba(247, 246, 244, 0.363), rgba(59, 59, 39, 0.388))">
+          <div class="col-md-6 text-start px-5">
+            <img class="img-fluid rounded" width="200" src="image/logo/logo-hjw-2.png" alt="logo hjw" loading="lazy" />
+          </div>
+
+          <div class="col-md-6 text-end px-5">
+            <a class="btn fs-6 text-center btn-success" aria-current="page" href="whatsapp://send?text=Assalamu'alaikum mohon info paket umroh dan hajinya&amp;phone=+6281288771997"><i class="bi bi-whatsapp"></i></a>
+            <a class="btn fs-6 text-center btn-primary" aria-current="page" href="https://www.instagram.com/alharamain.jw/"><i class="bi bi-instagram"></i></a>
+            <a class="btn fs-6 text-center btn-dark" aria-current="page" href="https://www.tiktok.com/@alharamainjayawisata"><i class="bi bi-tiktok"></i></a>
+            <a class="btn btn-primary" aria-current="page" href="https://www.facebook.com/alharamainjw"><i class="bi bi-facebook"></i></a>
+          </div>
+
+          <div class="col-md-4 px-5 pt-5 text-start">
+            <p class="fw-bold text-primary-emphasis fs-5">Alamat Kami :</p>
+            <p class="fw-bold text-primary-emphasis">
+              Jl. Jend. Basuki Rahmat No.12, Kp. Melayu - Jakarta Timur 13310 <br />
+              Telp :(021) 8510247 <br />
+              Email :hjw.care@alharamainjayawisata.com
+            </p>
+          </div>
+
+          <div class="col-md-3 px-5 text-start pt-5">
+            <p class="fw-bold text-primary-emphasis fs-5">Informasi</p>
+            <p class="fw-bold text-primary-emphasis">
+              Metoda Pembayaran <br />
+              Syarat & Ketentuan <br />
+              Kebijakan Privasi <br />
+              <a href="berita.html" class="link-underline link-underline-opacity-0 text-primary-emphasis">Berita</a> <br />
+            </p>
+          </div>
+
+          <div class="col-md-3 px-5 pt-5 text-start">
+            <p class="fw-bold text-primary-emphasis fs-5">Layanan</p>
+            <p class="fw-bold">
+              <a href="umrohreg.html" class="link-underline link-underline-opacity-0 text-primary-emphasis">Paket Umroh</a> <br />
+              <a href="hajikhusus.html" class="link-underline link-underline-opacity-0 text-primary-emphasis">Paket Haji</a> <br />
+              <a href="wisataislami.html" class="link-underline link-underline-opacity-0 text-primary-emphasis">Paket Wisata Islami</a> <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir credit -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center">
+      <p class="text-white">Created by <a class="fw-bold" href="https://www.instagram.com/eva.fatimah.hafidz/">Fatimah Hafidz</a> 2023</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <div class="container">
+      <!-- <h2>Modal Example</h2> -->
+      <!-- Trigger the modal with a button -->
+      <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   </body>
 </html>
