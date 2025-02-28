@@ -18,9 +18,9 @@ body {
   transform: scale(75%);
 }
 
-#img-logo-hjw:hover {
+/* #img-logo-hjw:hover {
   transform: scale(75%);
-}
+} */
 
 section {
   padding-top: 5rem;
@@ -51,4 +51,121 @@ section {
   border-radius: 1rem;
   background-color: #00d2ff;
   background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+}
+
+.btn-lihat-paket {
+  animation: wiggle 2s linear infinite;
+  /* position: absolute; */
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+
+  height: 3em;
+  width: 7em;
+
+  background: #775c01;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+}
+
+.btn-lihat-paket:hover {
+  background: #d2b96d;
+  border-top: 3px solid orange;
+  color: #480606;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.img-logo-hjw {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+    transform: translatey(-20px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+    transform: translatey(0px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  /* border-right: 2px solid rgba(255,255,255,.75); */
+  /* font-size: 40px; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.typewriter-animation {
+  animation: typewriter 5s steps(50) 1s 1 normal both, blinkingCursor 500ms steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkingCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
