@@ -19,8 +19,8 @@ body {
 }
 
 /* #img-logo-hjw:hover {
-  transform: scale(75%);
-} */
+    transform: scale(75%);
+  } */
 
 section {
   padding-top: 5rem;
@@ -98,17 +98,17 @@ section {
 }
 
 /* .fade-in {
-  animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+    animation: fadeIn 5s;
   }
-  100% {
-    opacity: 1;
-  }
-} */
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
 
 #konten-utama .cursor {
   position: relative;
