@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollable Video Gallery</title>
+    <style>
+      /* Gaya untuk container video */
+      .video-container {
+        display: flex; /* Mengatur video dalam baris */
+        overflow-x: auto; /* Mengaktifkan scroll horizontal */
+        gap: 10px; /* Jarak antar video */
+        padding: 10px;
+        white-space: nowrap; /* Mencegah video turun ke baris berikutnya */
+        border: 2px solid #ccc; /* Opsional: Tambahkan border */
+      }
+
+      /* Gaya untuk video */
+      .video-container video {
+        width: 300px; /* Lebar setiap video */
+        height: auto; /* Tinggi otomatis sesuai rasio */
+        border-radius: 8px; /* Opsional: Membuat sudut video melengkung */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: Tambahkan bayangan */
+      }
+
+      /* Gaya untuk scrollbar */
+      .video-container::-webkit-scrollbar {
+        height: 8px; /* Tinggi scrollbar */
+      }
+
+      .video-container::-webkit-scrollbar-thumb {
+        background: #888; /* Warna scrollbar */
+        border-radius: 4px; /* Membuat scrollbar melengkung */
+      }
+
+      .video-container::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Warna scrollbar saat di-hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Scrollable Video Gallery</h1>
+    <div class="video-container">
+      <!-- Tambahkan video -->
+      <video controls>
+        <source src="video/testi_haji2025_1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/testi_haji2025_2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/testi_haji2025_3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/testi_haji2025_4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/testi-haji2024-1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/testi-haji2024-2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </body>
+</html>
